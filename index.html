@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Entrega de Pacotes</h1>
+    <div class="controls">
+        <button id="add-pacote">Adicionar Pacote</button>
+        <button id="entregar-pacote">Entregar</button>
+    </div>
+
+    <div class="progresso-container">
+        <label for="barra-progresso">Progresso da Entrega</label>
+        <div id="info-entrega" class="info-barra" style="display: none;">
+            <span id="origem-entrega">Sede da Transportadora</span>
+            <span id="tempo-entrega">⏳</span>
+            <span id="destino-entrega"></span>
+        </div>
+        <progress id="barra-progresso" max="100" value="0"></progress>
+        <span id="porcentagem-progresso">0%</span>
+    </div>
+
+    <div class="container-flex">
+        <div class="fila-container">
+            <h2>Fila de Entregas</h2>
+            <ul id="fila"></ul>
+        </div>
+        <div class="historico-container">
+            <h2>Histórico de Entregas</h2>
+            <ul id="historico"></ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
